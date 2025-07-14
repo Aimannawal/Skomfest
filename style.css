@@ -75,7 +75,7 @@ body {
 .lineup-track {
   display: flex;
   width: fit-content;
-  animation: scrollLineup 25s linear infinite;
+  animation: scrollLineup 15s linear infinite;
 }
 
 .lineup-text {
