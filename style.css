@@ -71,7 +71,7 @@ body {
   font-weight: 600;
   white-space: nowrap;
   color: #131313;
-  animation: scrollLineup 15s linear infinite;
+  animation: scrollLineup 25s linear infinite;
 }
 
 /* Animasi geser ke kiri */
