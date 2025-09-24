@@ -5,25 +5,20 @@ Bukan sekadar konser, tapi wadah buat ngerasain vibes seru, musik keren, dan mom
 
 🌐 **Link Website:** [skomfest.aimanwafii.my.id](https://skomfest.aimanwafii.my.id)
 
+## 🏆 Prestasi
+- **Juara 2** — *Web Programming in EPIM 2025* 🎉  
+
+## 👥 Anggota Tim
+- **Aiman Wafi'i An Nawal**  
+- **Abi Arrasyid**  
+- **Daffa Arkandinov Nugroho**
+
 ## 🎶 Lineup
 - **PAYUNG TEDUH**
 - **HINDIA**
 - **REALITY CLUB**
 - **FOURTWNTY**
 - **PAMUNGKAS**
-
-## 🖼️ Preview Halaman
-### Landing Page
-![Landing Page](Page/landing-page.png)
-
-### Detail Ticket
-![Detail Ticket](Page/detail-ticket.png)
-
-### Ticket Payment
-![Ticket Payment](Page/ticket-payment.png)
-
-### Invoice
-![Invoice](Page/Invoice.png)
 
 ## ⚡ Fitur
 - Highlight lineup musisi  
