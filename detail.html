@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skomfest</title>
+    <link rel="icon" href="Asset/star.png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="nav-left">
+        <a href="/index.html">Beranda</a>
+        <a href="/index.html#tentang">Tentang</a>
+        <a href="/index.html#performer">Performer</a>
+      </nav>
+      <div class="nav-logo"><a href="#beranda">Skomfest</a></div>
+      <nav class="nav-right">
+        <a href="/index.html#tiket">Tiket</a>
+        <a href="/index.html#jadwal">Jadwal</a>
+        <a href="/index.html#galeri">Galeri</a>
+      </nav>
+
+      <div class="nav-hamburger" onclick="toggleMenu()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+
+      <div class="nav-mobile-menu" id="navMobileMenu">
+        <div class="mobile-menu-content">
+          <a href="#beranda" class="mobile-nav-link">Beranda</a>
+          <a href="#tentang" class="mobile-nav-link">Tentang</a>
+          <a href="#performer" class="mobile-nav-link">Performer</a>
+          <a href="#tiket" class="mobile-nav-link">Tiket</a>
+          <a href="#jadwal" class="mobile-nav-link">Jadwal</a>
+          <a href="#galeri" class="mobile-nav-link">Galeri</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="detail">
+      <div class="detail-left">
+        <img
+          src="Asset/Detail TIcket/stage.png"
+          alt=""
+          width="auto"
+          height="500px"
+          style="border-radius: 8px; margin-bottom: 40px"
+        />
+        <div class="deskripsi">
+          <h2>Deskripsi</h2>
+          <br />
+          <p>
+            Skomfest adalah festival musik tahunan sekolah yang jadi tempat
+            ngumpulnya vibes seru, musik keren, dan momen kebersamaan yang gak
+            terlupakan. Dengan penampilan dari musisi-musisi kece dan suasana
+            yang dijamin pecah, Skomfest bukan cuma soal konser—tapi soal
+            pengalaman seru yang wajib lo rasain langsung. Yuk, jadi bagian dari
+            euforianya!
+          </p>
+          <br />
+          <p>
+            Lokasi: Gelanggang Olahraga Sidoarjo, Sidoarjo<br />
+            Tanggal: Sabtu, 17 November 2025<br />
+            Pintu Dibuka: 17.00 WIB<br />
+            Kategori Tiket:
+          </p>
+          <ul>
+            <li>Silver Crown: Akses Reguler, Merch Biasa, dan Voucher Makan</li>
+            <li>
+              Gold Crown: Semua benefit Silver Crown, Jalur Masuk Khusus, Toilet
+              Prioritas, dan Extra Merch
+            </li>
+            <li>
+              Emerald Crown: Semua benefit Gold Crown, Free Official Merch,
+              Early Access, Backstage Akses, Area Duduk Khusus, dan Meet & Greet
+            </li>
+          </ul>
+          <h5>Ketentuan Umum</h5>
+          <ul>
+            <li>
+              Tiket hanya berlaku untuk 1 (satu) orang dan 1 (satu) kali masuk.
+            </li>
+            <li>
+              Tiket yang sudah dibeli tidak dapat dibatalkan, ditukar, atau
+              diuangkan kembali.
+            </li>
+            <li>
+              Penonton wajib membawa e-ticket dan kartu identitas saat
+              penukaran/masuk venue.
+            </li>
+            <li>
+              Penyelenggara berhak menolak penonton yang tidak mematuhi aturan
+              tanpa pengembalian dana.
+            </li>
+          </ul>
+          <h5>Barang yang Dilarang</h5>
+          <ul>
+            <li>Senjata tajam, narkoba, alkohol.</li>
+            <li>Makanan & minuman dari luar.</li>
+            <li>Kamera profesional, drone, alat perekam tanpa izin.</li>
+            <li>
+              Payung besar, kursi lipat, dan barang yang mengganggu penonton
+              lain.
+            </li>
+          </ul>
+          <h5>Keamanan & Ketertiban</h5>
+          <ul>
+            <li>
+              Dilarang merusak fasilitas, naik ke panggung, atau membuat
+              kerusuhan.
+            </li>
+            <li>
+              Penonton wajib mengikuti instruksi dari panitia & petugas
+              keamanan.
+            </li>
+            <li>
+              Pelanggaran dapat berakibat dikeluarkan dari venue tanpa
+              kompensasi.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-right">
+        <div class="tiket-card">
+          <div class="tiket-info-wrap">
+            <h1>Silver Crown</h1>
+            <div class="info-item-wrap">
+              <div class="info-item">
+                <img src="Asset/Icon/calendar.png" alt="" />
+                <p>17 November 2025</p>
+              </div>
+              <div class="info-item">
+                <img src="Asset/Icon/clock.png" alt="" />
+                <p>17.00 WIB</p>
+              </div>
+              <div class="info-item">
+                <img src="Asset/Icon/map.png" alt="" />
+                <p>Gelanggang Olahraga Sidoarjo, Jawa Timur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tiket-card">
+          <div class="tiket-price-wrap">
+            <div class="tiket-price">
+              <p>Harga Tiket</p>
+              <h5 id="ticketPrice">Rp 149.000</h5>
+            </div>
+            <div class="tiket-counter">
+              <div class="counter">
+                <button
+                  class="btn-counter"
+                  style="color: #ffffff"
+                  onclick="decreaseTicket()"
+                >
+                  -
+                </button>
+                <p id="ticketCount">1</p>
+                <button
+                  class="btn-counter"
+                  style="color: #00b7ad; position: relative; top: -2px"
+                  onclick="increaseTicket()"
+                >
+                  +
+                </button>
+              </div>
+              <p>Tersisa:<span id="remainingTickets">40 Tiket</span></p>
+            </div>
+            <div class="tiket-price">
+              <p>Total</p>
+              <h5 id="totalPrice">Rp 149.000</h5>
+            </div>
+            <a href="skomfest/payment/payment.html"><button class="btn-buy">Beli Sekarang</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        const navMobileMenu = document.getElementById("navMobileMenu");
+        const hamburger = document.querySelector(".nav-hamburger");
+
+        navMobileMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const navHamburger = document.querySelector(".nav-hamburger");
+        const navMobileMenu = document.getElementById("navMobileMenu");
+
+        if (
+          !navHamburger.contains(event.target) &&
+          !navMobileMenu.contains(event.target)
+        ) {
+          navMobileMenu.classList.remove("active");
+          navHamburger.classList.remove("active");
+        }
+      });
+
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          document.getElementById("navMobileMenu").classList.remove("active");
+          document.querySelector(".nav-hamburger").classList.remove("active");
+        });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      let ticketCount = 1;
+      let remainingTickets = 40;
+      const ticketPrice = 149000;
+
+      function updateDisplay() {
+        document.getElementById("ticketCount").textContent = ticketCount;
+        document.getElementById("remainingTickets").textContent =
+          remainingTickets + " Tiket";
+        document.getElementById("totalPrice").textContent =
+          "Rp " + (ticketPrice * ticketCount).toLocaleString("id-ID");
+      }
+
+      function increaseTicket() {
+        if (ticketCount < remainingTickets) {
+          ticketCount++;
+          updateDisplay();
+        }
+      }
+
+      function decreaseTicket() {
+        if (ticketCount > 0) {
+          ticketCount--;
+          updateDisplay();
+        }
+      }
+
+      updateDisplay();
+    </script>
+  </body>
+</html>

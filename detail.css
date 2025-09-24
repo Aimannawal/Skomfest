@@ -1,0 +1,304 @@
+:root {
+  --main: #00b7ad;
+  --bg-main: #0d0d0d;
+  --bg-secondary: #131313;
+  --text: #ffffff;
+  --text-secondary: #929292;
+}
+
+/* Outfit */
+@font-face {
+  font-family: "Outfit";
+  src: url("Outfit/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("Outfit/Outfit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("Outfit/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.detail {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 40px;
+  width: 1100px;
+  justify-content: space-between;
+}
+
+.detail-left {
+  flex: 1;
+  max-width: 720px;
+}
+
+.deskripsi h2 {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.deskripsi p {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  line-height: 18px;
+  font-family: "Outfit";
+}
+
+.deskripsi li {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  line-height: 18px;
+  font-family: "Outfit";
+}
+
+.deskripsi h5 {
+  color: var(--text);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  line-height: 18px;
+  font-family: "Outfit";
+}
+
+.detail-right {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 40px;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.tiket-card {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 320px;
+  color: var(--text);
+}
+
+.info-item-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-family: "Outfit";
+  align-items: center;
+}
+
+.info-item img {
+  width: auto;
+  height: 20px;
+}
+
+.tiket-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tiket-price p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Outfit";
+}
+
+.tiket-price h5 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.tiket-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tiket-counter p {
+  margin: 10px 0;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.tiket-counter span {
+  margin-left: 4px;
+  color: var(--main);
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.counter {
+  border: solid 1px rgba(77, 77, 77, 0.5);
+  border-radius: 8px;
+  display: flex;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 500;
+  height: 32px;
+  padding: 0 10px;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-counter {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-buy {
+  background-color: var(--main);
+  border-radius: 8px;
+  color: var(--bg-secondary);
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 500;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .detail-left {
+    max-width: 100%;
+  }
+
+  .detail-left img {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .detail-right {
+    position: static;
+    width: 100%;
+  }
+
+  .tiket-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .deskripsi h2 {
+    font-size: 20px;
+  }
+
+  .deskripsi p,
+  .deskripsi li {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .deskripsi h5 {
+    font-size: 16px;
+  }
+
+  .info-item {
+    font-size: 12px;
+  }
+
+  .info-item img {
+    height: 16px;
+  }
+
+  .tiket-price p,
+  .tiket-price h5 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .tiket-card {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .deskripsi h2 {
+    font-size: 18px;
+  }
+
+  .deskripsi p,
+  .deskripsi li {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .counter {
+    height: 28px;
+    padding: 0 8px;
+    gap: 8px;
+  }
+
+  .btn-counter {
+    font-size: 16px;
+  }
+}
