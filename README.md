@@ -23,7 +23,7 @@ Bukan sekadar konser, tapi wadah buat ngerasain vibes seru, musik keren, dan mom
 ![Ticket Payment](Page/ticket-payment.png)
 
 ### Invoice
-![Invoice](Page/invoice.png)
+![Invoice](Page/Invoice.png)
 
 ## ⚡ Fitur
 - Highlight lineup musisi  
