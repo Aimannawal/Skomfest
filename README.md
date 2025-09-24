@@ -3,7 +3,7 @@
 Skomfest (Skomda Festival) adalah festival musik tahunan dalam rangka Dies Natalis **SMK Telkom Sidoarjo**.  
 Bukan sekadar konser, tapi wadah buat ngerasain vibes seru, musik keren, dan momen kebersamaan yang gak terlupakan ✨
 
-🌐 **Website Resmi:** [skomfest.aimanwafii.my.id](https://skomfest.aimanwafii.my.id)
+🌐 **Link Website:** [skomfest.aimanwafii.my.id](https://skomfest.aimanwafii.my.id)
 
 ## 🎶 Lineup
 - **PAYUNG TEDUH**
